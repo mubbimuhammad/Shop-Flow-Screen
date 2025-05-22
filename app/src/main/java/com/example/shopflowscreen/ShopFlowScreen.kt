@@ -55,7 +55,7 @@ val starYellow = Color(0xFFFFC107)
 fun ShopFlowScreen() {
     val categories = listOf("Cleanser", "Toner", "Serums", "Moisturizers", "Sets", "Foundation", "Spots Remover")
     val promotions = listOf(
-        PromotionData("GET 20% OFF", "Limited time offer", R.drawable.shopflowcard1),
+        PromotionData("GET 20% OFF", "Get 20% off", R.drawable.shopflowcard1),
         PromotionData("NEW ARRIVALS", "Check out our latest products", R.drawable.shopflowcard1),
         PromotionData("FREE SHIPPING", "On orders over Rs. 1000", R.drawable.shopflowcard1)
     )
@@ -241,7 +241,7 @@ fun PromotionBanner(promotion: PromotionData) {
                 modifier = Modifier.wrapContentSize()
             ) {
                 Text(
-                    text = "SHOP NOW",
+                    text = "12 - 16 Oct",
                     color = Color.Black,
                     fontWeight = FontWeight.Bold,
                     fontSize = 12.sp
@@ -364,7 +364,7 @@ fun ProductList() {
     }
 
     Column(modifier = Modifier.fillMaxWidth()) {
-        listOf("eleucera", "glow", "afterglow").forEach { name ->
+        listOf("clencera", "glow", "afterglow").forEach { name ->
             ProductItem(
                 name = name,
                 description = "French clay and algae-powered cleanser",
